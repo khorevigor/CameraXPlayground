@@ -11,7 +11,8 @@ lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.9.3"
 composeBom = "2024.12.01"
 cameraView = "1.4.1"
-lifecycleViewmodelCompose = "2.8.7"
+tensorflowVision = "0.4.0"
+tensorflowGpu = "2.9.0"
 
 [libraries]
 androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraxVersion" }
@@ -34,9 +35,12 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
-androidx-material-icons-core = { group = "androidx.compose.material", name = "material-icons-core"}
-androidx-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended"}
-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose"}
+androidx-material-icons-core = { group = "androidx.compose.material", name = "material-icons-core" }
+androidx-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
+lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose" }
+tensorflow-lite-task-vision = { group = "org.tensorflow", name = "tensorflow-lite-task-vision", version.ref = "tensorflowVision" }
+tensorflow-lite-gpu = { group = "org.tensorflow", name = "tensorflow-lite-gpu", version.ref = "tensorflowGpu" }
+tensorflow-lite-gpu-delegate-plugin = { group = "org.tensorflow", name = "tensorflow-lite-gpu-delegate-plugin", version.ref = "tensorflowVision" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
